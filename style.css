@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+:root {
+  --cor-1: #fff;
+  --cor-2: #fff1ee;
+  --cor-3: #f6b6c0;
+  --cor-4: #dba5bd;
+  --cor-5: #c5adb1;
+  --cor-6: #fd7dff;
+  --cor-7: #38ffbd;
+  --cor-8: #B5F5C2;
+  --cor-9: #F597F9;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  box-sizing: border-box;
+  background-color: var(--cor-1);
+}
+
+.cabecalho {
+  padding: 2% 0 1.5rem 12%;
+  background-color: var(--cor-2);
+}
+
+.cabecalho__menu {
+  display: flex;
+  gap: 5rem;
+}
+
+.cabecalho__menu__nave {
+  font-size: 1.625rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  color: var(--cor-5);
+  text-decoration: none;
+}
+
+.cabecalho__menu__nave:hover {
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  text-decoration: underline;
+  text-shadow: 2px 2.5px 5px var(--cor-3);
+}
+
+.corpo {
+    padding: 8% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5.125rem;
+}
+
+
+.corpo__complemento {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.titulo {
+  font-size: 2.25rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+strong {
+  color: var(--cor-9);
+}
+
+  .p {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .p1 {
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .p2 {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  ul {
+    padding-left: 4.5rem;
+  }
+
+  .eu {
+
+    width: 45%;
+    border: 3px solid var(--cor-4);
+    border-radius: 20px 0;
+}
+
+  .rodape {
+    text-align: center;
+    padding: 30px;
+    background-color: var(--cor-2);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--cor-5);
+}
+
+@media (max-width: 1200px) {
+  .cabecalho {
+      padding: 10%;
+  }
+
+  .cabecalho__menu{
+      justify-content: center;
+  }
+
+  .corpo {
+      flex-direction: column-reverse;
+  }
+
+  .corpo__complemento {
+      width: auto;
+  }
+}
