@@ -108,7 +108,7 @@ strong {
     color: var(--cor-5);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 610px) {
   .cabecalho {
       padding: 10%;
   }
